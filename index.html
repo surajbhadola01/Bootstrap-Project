@@ -8,51 +8,27 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
         body{
-            background-color:tomato;
+            background-color:lightgrey
         }
-        @media(max-width: 768px) {
-           .myheader{
-                font-size: 30px;
-                text-align: center;
-           }
-           .p{
-               text-align: justify;
-               font-size: 20px;
-           }
+        .jumbotron{
+            background-color:turquoise;
+        }
         }
     </style>
 </head>
 <body >
 
-    <div class="container" id="remove">
-        <div class="row">
-            <div class="col-md-3" style="border: 1px solid red">
-                <img src="pic/bg.jpg" width="100%">
-            </div>
-            <div class="col-md-9" style="1px solid red">
-                <h1 class="myheader">Welcome to first project</h1>
-                <p class="p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, enim nisi. Repellendus omnis deleniti facilis quod, dolorum obcaecati porro quae totam amet sunt eligendi? Obcaecati, hic quod. Architecto rerum, dignissimos sequi porro maiores voluptatem saepe natus at sed numquam tempore unde obcaecati aut debitis quaerat ducimus nemo cum magni ullam.
-                </p>
-            </div>
-        </div>
+    <div class="container-fluid jumbotron jumbotron-fluid text-center" >
+        <h1>Suraj Bhadola</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus accusantium nostrum ea quas velit vero quidem aperiam assumenda harum architecto.</p>
+
+    <br><br><br>
+
+    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est iure libero cupiditate, corrupti cumque dolorum ullam id velit repellendus veritatis necessitatibus nulla commodi nam quod doloremque! Accusamus ad facere debitis. Corporis consectetur magni, dolorem sunt explicabo ipsam error quibusdam optio cumque blanditiis tenetur veritatis cupiditate, libero enim similique quaerat.</p>
+
     </div>
 
-
-    <script>
-        window.onresize = function(){
-            if(screen.width<768)
-            {
-                var remove = document.querySelector("#remove");
-                remove.className="container-fluid";
-            }
-
-            else{
-                var remove = document.querySelector("#remove");
-                remove.className="container";
-            }
-        }
-    </script>
+   
 
 
     <script src="js/bootstrap.js"></script>
