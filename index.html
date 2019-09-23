@@ -7,10 +7,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
-        
+        @media(max-width: 768px) {
+           .myheader{
+                font-size: 30px;
+                text-align: center;
+           }
+           .p{
+               text-align: justify;
+               font-size: 20px;
+           }
+        }
     </style>
 </head>
 <body >
+
+    <div class="container" id="remove">
+        <div class="row">
+            <div class="col-md-3" style="border: 1px solid red">
+                <img src="pic/bg.jpg" width="100%">
+            </div>
+            <div class="col-md-9" style="1px solid red">
+                <h1 class="myheader">Welcome to first project</h1>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, enim nisi. Repellendus omnis deleniti facilis quod, dolorum obcaecati porro quae totam amet sunt eligendi? Obcaecati, hic quod. Architecto rerum, dignissimos sequi porro maiores voluptatem saepe natus at sed numquam tempore unde obcaecati aut debitis quaerat ducimus nemo cum magni ullam.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        window.onresize = function(){
+            if(screen.width<768)
+            {
+                var remove = document.querySelector("#remove");
+                remove.className="container-fluid";
+            }
+
+            else{
+                var remove = document.querySelector("#remove");
+                remove.className="container";
+            }
+        }
+    </script>
+
 
     <script src="js/bootstrap.js"></script>
     <script src="js/jQuery.js"></script>
